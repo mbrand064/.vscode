@@ -6,17 +6,18 @@
 
 ## Team Members
 
-<< List team member names >>
-
+Mariah Band
 ***
 
 ## Project Description
 
-<< Give an overview of your project >>
+A game similar to crossy road where the the goal is to get the chicken across the road without it being hit by cars. 
 
 ***    
 
 ## GUI Design
+
+
 
 ### Initial Design
 
