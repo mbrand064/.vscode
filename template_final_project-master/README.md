@@ -29,6 +29,12 @@ A game similar to crossy road where the the goal is to get the chicken across th
 
 ## Program Design
 
+- chicken and car figures
+- moveable characters
+- moveable road/ cars
+- game over screen 
+- obstacle collisions
+
 ### Features
 
 1. << Feature 1 >>
