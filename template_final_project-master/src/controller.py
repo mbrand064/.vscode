@@ -10,10 +10,21 @@ class Controller:
 
     #setup pygame data
     
-  #def mainloop(self):
-    #while True: 
-      for event in pygame.event.get()
-      self.screen.fill('blue') 
+  def mainloop(self):
+    running = True
+    while running: 
+      for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+          running = False 
+
+      player.update()
+
+      if pygame.sprite.spritecollide(player, cars, False):
+        print("Game Over!")
+          
+      self.screen.fill('black') 
+      pygame.display.flip()
+
 
 
     pygame.sprite.spritecollide(self.player, self.cars)
@@ -25,7 +36,19 @@ class Controller:
   ### below are some sample loop states ###
 
   def menuloop(self):
-      
+    start = True
+    while start:
+      for event in pygame.event.get()
+        if event.type == pygame.QUIT:
+          pygame.quit()
+          quit()
+      gameDisplay.fill(white)
+      largeText = pygame.font.Font('freesanbold.ttf', 115)
+      TextSurf, TextRect = text_objects("Chicken Crossing", largeText)
+      TextRect.center = ((display_width/2), (display_height/2))
+      gameDisplay.bilt(TextSurf, TextRect)
+      pygame.display.update()
+      clock.tick(15)
       #event loop
 
       #update data
@@ -33,6 +56,10 @@ class Controller:
       #redraw
       
   def gameloop(self):
+    window_width = 800
+    window_height = 600
+    screen = pygame.display.set_mode((window_width, window_height))
+    
       #event loop
 
       #update data
@@ -45,3 +72,4 @@ class Controller:
       #update data
 
       #redraw
+  menuloop()

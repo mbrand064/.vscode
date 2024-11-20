@@ -7,10 +7,8 @@ class Background:
     def render(self, screen):
         screen.blit(self.image, self.rect)
 
-pygame.init()
+    
 
-window_width = 800
-window_height = 600
-screen = pygame.display.set_mode((window_width, window_height))
+
 
 bg = Background('background.jpg', [0, 0])
