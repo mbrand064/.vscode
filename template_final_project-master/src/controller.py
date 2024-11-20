@@ -72,4 +72,3 @@ class Controller:
       #update data
 
       #redraw
-  menuloop()

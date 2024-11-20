@@ -22,4 +22,5 @@ class Player(pygame.sprite.Sprite):
             self.rect.x += self.speed
         if keys[pygame.K_UP]:
             self.rect.y -= self.speed
+    def draw(self):
 
