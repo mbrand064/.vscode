@@ -6,13 +6,14 @@ class Controller:
   def __init__(self):
     self.player = Player()
     self.cars = Cars()
-    self.obstacles = Obstacles()
+    self.music = Music()
+    self
 
     #setup pygame data
     
   #def mainloop(self):
     #while True: 
-      fer ecent in pygame.event.get()
+      for event in pygame.event.get()
       self.screen.fill('blue') 
 
 
@@ -25,7 +26,7 @@ class Controller:
   ### below are some sample loop states ###
 
   def menuloop(self):
-    
+      
       #event loop
 
       #update data
