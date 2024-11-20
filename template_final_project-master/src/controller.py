@@ -1,7 +1,8 @@
 import pygame 
+import pygame_menu
 from src.player import Player
 from src.cars import Cars
-from src.background import Background
+
 class Controller:
   def __init__(self):
     self.player = Player()
@@ -59,7 +60,9 @@ class Controller:
     window_width = 800
     window_height = 600
     screen = pygame.display.set_mode((window_width, window_height))
+    self.background_image = pygame.image.load(background.png).convert()
     
+  def 
       #event loop
 
       #update data
