@@ -6,7 +6,6 @@ class Controller:
   def __init__(self):
     self.player = Player()
     self.cars = Cars()
-    self.music = Music()
     self
 
     #setup pygame data
