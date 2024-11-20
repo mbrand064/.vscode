@@ -1,7 +1,7 @@
 import pygame 
 from src.player import Player
 from src.cars import Cars
-from src.movingscreen import MovingScreen
+from src.background import Background
 class Controller:
   def __init__(self):
     self.player = Player()
