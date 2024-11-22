@@ -39,7 +39,7 @@ class Controller:
   def menuloop(self):
     start = True
     while start:
-      for event in pygame.event.get()
+      for event in pygame.event.get():
         if event.type == pygame.QUIT:
           pygame.quit()
           quit()
@@ -62,7 +62,7 @@ class Controller:
     screen = pygame.display.set_mode((window_width, window_height))
     self.background_image = pygame.image.load(background.png).convert()
     
-  def 
+  def mad():
       #event loop
 
       #update data
