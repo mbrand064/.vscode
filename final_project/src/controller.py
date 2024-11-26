@@ -57,10 +57,23 @@ class Controller:
       #redraw
       
   def gameloop(self):
+
     window_width = 800
     window_height = 600
     screen = pygame.display.set_mode((window_width, window_height))
+    pygame.display.set_caption('Chicken Crossing: Will the chicken make it to the other side?')
     self.background_image = pygame.image.load(background.png).convert()
+    clock = pygame.time.Clock() 
+    
+    run = True
+    while run:
+      for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+    
+      screen.fill((0, 255, 0))
+      pygame.display.update()
+
+    
     
   def mad():
       #event loop

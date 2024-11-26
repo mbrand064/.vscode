@@ -5,13 +5,14 @@ class Player(pygame.sprite.Sprite):
     def __init__(self,name):
         super().__init__()
         
-        self.name
+        self.x = 50
+        self.y = height / 2
         self.size = 'small'
-        self.image = pygame.image.load(f"/assets/{name}.png") 
-        self.rect = self.image.get_rect()
-        self.rect.x = 0
-        self.rect.y = 0
-        self.speed = 3
+        self.width = 100
+        self.height = 50
+        self.speed = 4
+        self.player = pygame.image.load(f"/assets/{player}.png") 
+        self.player = pygame.transform.scale(self.player, self.width, self.height)
 
     def update(self):
         keys = pygame.key.get_pressed()
@@ -24,3 +25,4 @@ class Player(pygame.sprite.Sprite):
             self.rect.y -= self.speed
     def draw(self):
 
+        
