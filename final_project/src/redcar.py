@@ -6,7 +6,7 @@ class RedCar(pygame.sprite.Sprite):
         self.width = width
         self.height = height
         self.size = 'medium'
-        self.image = pygame.image.load(f"/assets/{car}.png") 
+        self.image = pygame.image.load(f"/assets/{car1}.png") 
         self.speed = speed
         self.direction = direction
 

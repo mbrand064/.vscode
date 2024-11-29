@@ -5,7 +5,7 @@ class BlueCar(pygame.sprite.Sprite):
         self.width = width
         self.height = height
         self.size = 'medium'
-        self.image = pygame.image.load(f"/assets/{car}.png") 
+        self.image = pygame.image.load(f"/assets/{car2}.png") 
         self.speed = speed
         self.direction = direction
 
