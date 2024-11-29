@@ -24,5 +24,13 @@ class Player(pygame.sprite.Sprite):
         if keys[pygame.K_UP]:
             self.rect.y -= self.speed
     def draw(self):
+        running = True
+        while running:
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    quit()
+                    
+
+
 
         
