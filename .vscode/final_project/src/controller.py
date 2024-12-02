@@ -2,12 +2,18 @@ import pygame
 import pygame_menu
 from src.player import Player
 from src.cars import Cars
+#from src.redcar import RedCar
+from src.screen import Screen
 
+width = 640
+height = 480
+bg = Screen()
 class Controller:
   def __init__(self):
     self.player = Player()
     self.cars = Cars()
-    self
+    self.screen = Screen()
+    
 
     #setup pygame data
     
@@ -58,23 +64,23 @@ class Controller:
       
   def gameloop(self):
 
-    window_width = 800
-    window_height = 600
+    #window_width = 640
+    #window_height = 480
     screen = pygame.display.set_mode((window_width, window_height))
     pygame.display.set_caption('Chicken Crossing: Will the chicken make it to the other side?')
-    self.background_image = pygame.image.load(background.png).convert()
+    self.background_image = pygame.image.load(f"/assets/{Scene}.png").convert()
     clock = pygame.time.Clock() 
     
     run = True
     while run:
       for event in pygame.event.get():
         if event.type == pygame.QUIT:
-    
+          run = False
+  
       screen.fill((0, 255, 0))
       pygame.display.update()
+      pygame.quit()
 
-    
-    
   def mad():
       #event loop
 
